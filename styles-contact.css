@@ -70,12 +70,38 @@ html, body {
 }
 
 .center {
-    width: 600px;
+    width: 40%;
+	min-width: 300px;
 	padding: 2%;
     margin: 100px auto;
  	background: rgba(244, 226, 237, 0.75); /*this uses opacity of 75% for the background color*/
 	text-align: center;
 	border: 5px solid white;
+	animation: fadeIn 5s;
+	-webkit-animation: fadeIn 5s;
+	-moz-animation: fadeIn 5s;
+	-o-animation: fadeIn 5s;
+	-ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% (opacity: 1;)
+}
+@-moz-keyframes fadeIn {
+	0% {opacity:0;}
+	100% (opacity: 1;)
+}
+@-webkit-keyframes fadeIn {
+	0% {opacity:0;}
+	100% (opacity: 1;)
+}
+@-o-keyframes fadeIn {
+	0% {opacity:0;}
+	100% (opacity: 1;)
+}
+@-ms-keyframes fadeIn {
+	0% {opacity:0;}
+	100% (opacity: 1;)
 }
 
    
@@ -114,26 +140,33 @@ p {
     color: #fff;
 }
 nav{
-	font-family: "quayside", sans-serif;
+	font-family: "amster", serif;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 1.2em;
 	width: 400px;
 	margin: 0 auto;
+	color:#951278;
 	border: solid white;
 	border-width: 2px 0;
 	text-align: center;
 	margin-top: 2em;
+	text-decoration: none;
 }
 nav li{
 	display: inline;
+	text-decoration: none;
+	color:#951278;
 }
 nav a{
 	display: inline-block;
 	padding: 10px;
+	text-decoration: none;
+	color:#951278;
+
 }
 a{
-	color: #650b0b
+	color: #951278
 	text-decoration: none;
 	font-weight: bold;
 }
